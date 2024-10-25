@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/07dc80dc32.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="/Portfolio/images/logo.png" class="logo" width="200" height="100" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>
+            Hi, I'm
+            <span>
+              <br />
+              Vraddhi</span
+            >
+            Valecha
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section-->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/Portfolio//images/about.webp" height : 200px alt="About Me" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium unde architecto maiores veritatis voluptatum natus
+              molestias ipsa dolor reprehenderit esse. Ratione, sunt
+              exercitationem. Nam quibusdam aperiam dignissimos perspiciatis
+              praesentium dolore. Minus, voluptatem harum, inventore porro qui,
+              omnis placeat assumenda quas dolore magnam itaque! Ad sint
+              voluptatibus repellat dignissimos, optio ab et molestiae nam velit
+              fuga officia dicta corporis suscipit nulla. Quaerat nam expedita
+              incidunt beatae odit accusantium, voluptatem itaque quasi, autem
+              libero vitae corrupti rerum exercitationem reiciendis, ex
+              obcaecati? Unde iusto voluptatum eum ex at! Vitae officia quidem
+              aliquam alias?
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experiance')">
+                Experiance
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span> Web Development</span><br />Designing Web/App
+                  interfaces Using HTML , CSS & JAVASCRIPT
+                </li>
+                <!-- <li>
+                  <span> App Development</span><br />
+                  Web app Development
+                </li>
+                <li><span> UI/UX</span><br />Building Android/Ios apps</li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="experiance">
+              <ul>
+                <li>
+                  <!-- <span> 2023-current</span><br />
+                  Web Development Training
+                </li> -->
+                </li>
+
+                <li>
+                  <span> 2023 - 2024 </span><br />
+                  120+ Questions Solved On LeetCode
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span> 2022 - current</span><br />Student at Gyan Ganga
+                  Institute of Technology And Science
+                </li>
+                <li>
+                  <span> 2021 - 2022</span><br />
+                  Class 12th
+                </li>
+                <li><span> 2019 - 2020 </span><br />Class 10th</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+              inventore eum natus nisi, repellat accusamus quam quis nesciunt!
+              Aspernatur quibusdam aliquam commodi praesentium
+            </p>
+            <a href="#"><h3>Learn more</h3></a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+              inventore eum natus nisi, repellat accusamus quam quis nesciunt!
+              Aspernatur quibusdam aliquam commodi praesentium
+            </p>
+            <a href="#"><h3>Learn more</h3></a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+              inventore eum natus nisi, repellat accusamus quam quis nesciunt!
+              Aspernatur quibusdam aliquam commodi praesentium
+            </p>
+            <a href="#"><h3>Learn more</h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Porfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/Portfolio//images/amazonClone.png" />
+            <div class="layer">
+              <h3>Amazon Clone</h3>
+              <p>
+                This is a clone of Amazon using HTML, CSS , JAVASCRIPT to expand
+                my knowledge and experiance
+              </p>
+              <a href="/Portfolio/Amazon/index.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/Portfolio/images/TicTacToe.png" />
+            <div class="layer">
+              <h3>TicTacToe Game</h3>
+              <p>A Game everyones love to play TicTacToe</p>
+              <a href="/Portfolio/TicTacToe/index.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/Portfolio//images/passwordStrengthChecker.png" />
+            <div class="layer">
+              <h3>password Strength Checker</h3>
+              <p>To check whether the password is strong enough or not</p>
+              <a href="/Portfolio//passwordStrengthChecker/index.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <href ="#" class="btn">See More</href>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+            <p><i class="fa-solid fa-phone"></i>0123456789</p>
+            <div class="social-icons">
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="Resume.pdf" download class="btn btn2"> DownLoad Resume</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright © Vraddhi. Made with 
+        <i class="fa-solid fa-heart"></i>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
